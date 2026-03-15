@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/worktree-protocol",
+    "crates/worktree-server",
+    "crates/worktree-git",
+    "crates/worktree-cli",
+    "crates/worktree-sdk",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
