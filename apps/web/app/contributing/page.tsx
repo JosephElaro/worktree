@@ -59,7 +59,7 @@ export default function ContributingPage() {
             to manage versions
           </li>
           <li>
-            <strong className="text-foreground">pnpm</strong> — our package
+            <strong className="text-foreground">npm</strong> — our package
             manager of choice for the monorepo
           </li>
         </ul>
@@ -102,7 +102,7 @@ export default function ContributingPage() {
               3. Install JavaScript dependencies
             </p>
             <pre className="overflow-x-auto rounded-lg border bg-muted/50 px-4 py-3 text-sm">
-              <code>pnpm install</code>
+              <code>npm install</code>
             </pre>
           </div>
           <div>
@@ -110,7 +110,7 @@ export default function ContributingPage() {
               4. Start the docs site in development mode
             </p>
             <pre className="overflow-x-auto rounded-lg border bg-muted/50 px-4 py-3 text-sm">
-              <code>pnpm dev</code>
+              <code>npm run dev</code>
             </pre>
           </div>
         </div>
@@ -160,11 +160,11 @@ export default function ContributingPage() {
             <p className="text-sm text-muted-foreground">
               Use ESLint + Prettier. Run{" "}
               <code className="rounded bg-muted px-1.5 py-0.5 text-xs">
-                pnpm lint
+                npm run lint
               </code>{" "}
               and{" "}
               <code className="rounded bg-muted px-1.5 py-0.5 text-xs">
-                pnpm format
+                npm run format
               </code>{" "}
               to check and fix issues automatically.
             </p>
@@ -238,7 +238,7 @@ export default function ContributingPage() {
             </code>{" "}
             and{" "}
             <code className="rounded bg-muted px-1.5 py-0.5 text-xs">
-              pnpm test
+              npm test
             </code>{" "}
             to make sure nothing is broken.
           </li>

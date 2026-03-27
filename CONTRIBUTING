@@ -65,7 +65,7 @@ Before writing a single line of code, internalize these principles. Pull request
 
 ## Project Structure
 
-W0rkTree is a polyglot monorepo managed with **Cargo workspaces** (Rust) and **Turborepo + pnpm** (TypeScript/web).
+W0rkTree is a polyglot monorepo managed with **Cargo workspaces** (Rust) and **Turborepo + npm** (TypeScript/web).
 
 ```
 worktree/
@@ -103,7 +103,7 @@ worktree/
 │   ├── install.sh                   # Unix install script
 │   └── install.ps1                  # Windows install script
 ├── Cargo.toml                       # Rust workspace root
-├── package.json                     # Node/pnpm workspace root
+├── package.json                     # Node/npm workspace root
 ├── turbo.json                       # Turborepo pipeline config
 ├── LICENSE                          # W0rkTree Public License v1.0
 └── CONTRIBUTING.md                  # ← You are here
@@ -134,7 +134,7 @@ If you are unsure where to start, **start with `worktree-protocol`**. It is the 
 | **Rust** | stable (2021 edition) | Crate compilation |
 | **Cargo** | latest stable | Rust package manager |
 | **Node.js** | ≥ 18.0.0 | Web frontend, docs |
-| **pnpm** | ≥ 8.0.0 | Node package manager |
+| **npm** | ≥ 9.0.0 | Node package manager |
 | **Git** | any | Cloning this repo (ironic, we know) |
 
 ### Clone and Setup
@@ -145,7 +145,7 @@ git clone https://github.com/seanfilimon/worktree.git
 cd worktree
 
 # Install Node dependencies
-pnpm install
+npm install
 
 # Verify Rust toolchain
 rustup update stable
@@ -153,7 +153,7 @@ cargo --version
 
 # Verify everything builds
 cargo build --workspace
-pnpm build
+npm run build
 ```
 
 ### Recommended IDE Setup
@@ -186,10 +186,10 @@ cargo build -p worktree-server
 
 ```bash
 # Build all apps and packages
-pnpm build
+npm run build
 
 # Development mode (hot reload)
-pnpm dev
+npm run dev
 ```
 
 ### Full CI Pipeline (Locally)
@@ -226,7 +226,7 @@ cargo test -p worktree-protocol -- snapshot
 cargo test --workspace -- --nocapture
 
 # Run web/TypeScript tests
-pnpm test
+npm test
 ```
 
 ### Test Categories
@@ -423,8 +423,8 @@ pub struct StagedSnapshot { ... }
 
 ### TypeScript / Web
 
-- **Formatting**: Prettier (config in repo root). Run `pnpm format` before committing.
-- **Linting**: ESLint with the project config. `pnpm lint` must pass.
+- **Formatting**: Prettier (config in repo root). Run `npm run format` before committing.
+- **Linting**: ESLint with the project config. `npm run lint` must pass.
 - **Types**: Strict TypeScript. No `any` without a comment explaining why.
 - **Framework**: Next.js (App Router) for the web app. Fumadocs for documentation site.
 

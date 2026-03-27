@@ -126,7 +126,7 @@ W0rkTree operates as a **two-runtime system**. Neither runtime is optional.
 
 ## Project Structure
 
-W0rkTree is a polyglot monorepo managed with **Cargo workspaces** (Rust) and **Turborepo + pnpm** (TypeScript/web).
+W0rkTree is a polyglot monorepo managed with **Cargo workspaces** (Rust) and **Turborepo + npm** (TypeScript/web).
 
 ```
 worktree/
@@ -173,7 +173,7 @@ worktree/
 │   └── install.ps1                      # Windows installer
 │
 ├── Cargo.toml                           # Rust workspace root
-├── package.json                         # Node/pnpm workspace root (Turborepo)
+├── package.json                         # Node/npm workspace root (Turborepo)
 ├── turbo.json                           # Turborepo pipeline config
 ├── LICENSE                              # W0rkTree Public License v1.0
 ├── CONTRIBUTING.md                      # Contributor guide
@@ -399,7 +399,7 @@ Grant levels: `read-only` (view only), `modify` (edit, no export), `redistribute
 | **Rust** | stable (2021 edition) | Crate compilation |
 | **Cargo** | latest stable | Rust package manager |
 | **Node.js** | ≥ 18.0.0 | Web frontend, docs site |
-| **pnpm** | ≥ 8.0.0 | Node package manager |
+| **npm** | ≥ 9.0.0 | Node package manager |
 
 ### Quick Start
 
@@ -412,8 +412,8 @@ cd worktree
 cargo build --workspace
 
 # Install Node dependencies & build web
-pnpm install
-pnpm build
+npm install
+npm run build
 
 # Run all tests
 cargo test --workspace
@@ -459,7 +459,7 @@ trunk serve
 ```bash
 # Start the Next.js dev server
 cd apps/web
-pnpm dev
+npm run dev
 # → Open http://localhost:3000
 ```
 
@@ -811,7 +811,7 @@ Public trees for open-source code. Private nested trees for proprietary modules.
 | **Git Bridge** | libgit2 (via git2 crate), SHA-1 ↔ BLAKE3 translation |
 | **Admin Panel** | Yew 0.21 (WASM), Axum 0.7 (SSR), shadcn-style CSS variables |
 | **Docs Site** | Next.js 16, Fumadocs, React 19, Radix UI, Tailwind CSS v4 |
-| **Build** | Cargo workspaces, Turborepo, pnpm, Trunk (WASM) |
+| **Build** | Cargo workspaces, Turborepo, npm, Trunk (WASM) |
 | **Transport** | QUIC (TLS 1.3 native), gRPC over HTTP/2 (fallback) |
 | **Hashing** | BLAKE3 (content addressing), Ed25519 (snapshot signing) |
 

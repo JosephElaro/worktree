@@ -40,9 +40,6 @@ next-env.d.ts
 # turbo
 .turbo
 
-# pnpm
-.pnpm-debug.log*
-
 # IDE
 .vscode
 .idea

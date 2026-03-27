@@ -19,7 +19,7 @@ Teams have responded with layers of tooling — Nx's affected graph, Turborepo's
 
 **Nx and Turborepo** sit above Git as build orchestrators. They analyze `package.json` or `project.json` files to construct a dependency graph, then use that graph to run only affected tasks. This works well for builds, but the graph is invisible to version control itself. Git doesn't know that `packages/auth` depends on `packages/crypto`, so branch protection rules, merge conflict detection, and history analysis operate without that context.
 
-**Lerna, Rush, and pnpm workspaces** manage package linking and versioning. They streamline `npm publish` workflows but add no intelligence to version control operations. You still face full-repo clones, global branch namespaces, and flat permission models.
+**Lerna, Rush, and npm/pnpm workspaces** manage package linking and versioning. They streamline `npm publish` workflows but add no intelligence to version control operations. You still face full-repo clones, global branch namespaces, and flat permission models.
 
 ## W0rkTree's Native Monorepo Model
 
