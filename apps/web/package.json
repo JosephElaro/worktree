@@ -5,8 +5,8 @@
   "scripts": {
     "prepare": "fumadocs-mdx || true",
     "dev": "fumadocs-mdx && next dev",
-    "build": "fumadocs-mdx && next build",
-    "start": "next start",
+    "build": "fumadocs-mdx && next build && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/ || true",
+    "start": "node .next/standalone/server.js",
     "lint": "next lint",
     "clean": "rm -rf .next .source node_modules",
     "type-check": "tsc --noEmit"
